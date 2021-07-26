@@ -1036,9 +1036,9 @@ a:focus {
 
 
 /*******************************/
-/******* Product Slider CSS *******/
+/******* Testimonial CSS *******/
 /*******************************/
-.product {
+.testimonial {
     position: relative;
     margin: 45px 0;
     padding: 90px 0;
@@ -1050,37 +1050,37 @@ a:focus {
     background-size: cover;
 }
 
-.product .container {
+.testimonial .container {
     max-width: 760px;
 }
 
-.about-page .product {
+.about-page .testimonial {
     padding-bottom: 90px;
 }
 
-.product .product-slider-nav {
+.testimonial .testimonial-slider-nav {
     position: relative;
     width: 300px;
     margin: 0 auto;
 }
 
-.product .product-slider-nav .slick-slide {
+.testimonial .testimonial-slider-nav .slick-slide {
     position: relative;
     opacity: 0;
     transition: .5s;
 }
 
-.product .product-slider-nav .slick-active {
+.testimonial .testimonial-slider-nav .slick-active {
     opacity: 1;
     transform: scale(1.3);
 }
 
-.product .product-slider-nav .slick-center {
+.testimonial .testimonial-slider-nav .slick-center {
     transform: scale(1.8);
     z-index: 1;
 }
 
-.product .product-slider-nav .slick-slide img {
+.testimonial .testimonial-slider-nav .slick-slide img {
     position: relative;
     display: block;
     margin-top: 37px;
@@ -1089,13 +1089,13 @@ a:focus {
     border-radius: 100px;
 }
 
-.product .product-slider {
+.testimonial .testimonial-slider {
     position: relative;
     margin-top: 15px;
     padding-top: 50px;
 }
 
-.product .product-slider::before {
+.testimonial .testimonial-slider::before {
     position: absolute;
     content: "";
     width: 60px;
@@ -1105,13 +1105,13 @@ a:focus {
     background: url(../img/quote.png) top center no-repeat;
 }
 
-.product .product-slider h3 {
+.testimonial .testimonial-slider h3 {
     color: #fdbe33;
     font-size: 22px;
     font-weight: 700;
 }
 
-.product .product-slider h4 {
+.testimonial .testimonial-slider h4 {
     font-size: 14px;
     font-weight: 300;
     color: #ffffff;
@@ -1119,7 +1119,7 @@ a:focus {
     margin-bottom: 10px;
 }
 
-.product .product-slider p {
+.testimonial .testimonial-slider p {
     color: #ffffff;
     font-size: 16px;
     font-weight: 300;

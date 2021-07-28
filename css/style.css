@@ -636,6 +636,9 @@ a:focus {
 .heads{
     font-weight: bold;
 }
+#more{
+    display: none;
+}
 
 @media (max-width: 767.98px) {
     .about .about-img {

@@ -65,7 +65,7 @@
                                         </div>
                                         <div class="top-bar-text">
                                             <h3>Call Us</h3>
-                                            <p> +91 8871314344</p>
+                                            <a href="tel:8871314344"><p> +91 8871314344</p></a>
                                         </div>
                                     </div>
                                 </div>
@@ -76,7 +76,8 @@
                                         </div>
                                         <div class="top-bar-text">
                                             <h3>Email Us</h3>
-                                            <p> aditya@ramarutfibc.com</p>
+                                            <a href="mailto:aditya@ramarutfibc.com"><p> aditya@ramarutfibc.com</p></a>
+                                            
                                         </div>
                                     </div>
                                 </div>
@@ -161,16 +162,19 @@
                            We will be staying true to our values and mission – a company focused on business markets, driven by legacy of our quality of services and the strength of our great people. Our culture begins with our values that drive everything we do: Integrity, Intensity, Innovation and Involvement. 
                         </p>
                         <p class="text-justify">
-                           As we look back over the years, our sustained growth has enabled us to emerge as a complete plastic packaging solution provider for the nation and different markets around the globe. The past few years have been a great learning experience at Ramarut Packaging Pvt. Ltd. Driven by the spirit of success, we always had an eye on growth. 
+                           As we look back over the years, our sustained growth has enabled us to emerge as a complete plastic packaging solution provider for the nation and different markets around the globe. The past few years have been a great learning experience at Ramarut Packaging Pvt. Ltd. Driven by the spirit of success, we always had an eye on growth.<span id="dots">...</span> 
                         </p>
-                        <div style="display: none;">
+                        
+                        
+
+                        <div id="more">
                             <p class="text-justify">
                                 Our customers are invariably world class organisations – often considered best in class in their category. They are well consolidated and continue to rationalist their supplier base and focus on cost. Generally, they look to align themselves with global partners who understand the scale and nature of their business and who can also supply their needs at a local level.
                             </p>
                             <p class="text-justify">
                                 They require support for their growth plans in established and emerging markets and consistency in terms of technological capability, service and quality. They expect their partners to understand the drivers of their markets and to be proactive in contributing to innovative solutions to changing packaging needs and in driving costs out of the supply chain. They also expect them to act in a responsible manner and support their own efforts towards sustainability.
                             </p>
-                            <h4>OUR STRATEGY</h4>
+                            <h4 class="heads">OUR STRATEGY</h4>
                             <p class="text-justify">
                                 We have evolved our strategy in light of the changing environment. To ensure that we deliver shareholder value, our strategy is based on taking the lead in four key areas: achieving best performance; strengthening relationships with our customers and suppliers; relentlessly pursuing operational excellence and building a winning organisation.
                             </p>
@@ -184,12 +188,15 @@
                             <p class="text-justify">
                                 Building a winning organisation means fostering a culture that consistently drives performance towards our vision and delivers on promises.
                             </p>
-                            <h4>SUMMARY</h4>
+                            <h4 class="heads">SUMMARY</h4>
                             <p class="text-justify">
                                 In the years to come, we look forward to working with our members to accelerate change in plastic packaging industry and to create an environment that improves the future of all.
                             </p>
+                            
                         </div>
-                        <a href="" class="btn btn-warning">LEARN MORE</a>
+
+                        <button onclick="myFunction()" class="btn btn-warning" id="myBtn">Read More</button>
+                        
                             
                         </div>
                     
@@ -373,14 +380,15 @@
                             <div class="footer-contact">
                                 <h2>Office Contact</h2>
                                 <p><i class="fa fa-map-marker-alt"></i>222 Lotus Garden Colony Near Bharat Petrol Pump, Tejaji Nagar, Khandwa Road, Indore. Pin No- 452020</p>
-                                <p><i class="fa fa-phone-alt"></i>+91 8871314344</p>
-                                <p><i class="fa fa-envelope"></i>aditya@ramarutfibc.com</p>
+                                <a href="tel:8871314344"><p class="text-white"><i class="fa fa-phone-alt"></i>+91 8871314344</p></a>
+                                <a href="mailto:aditya@ramarutfibc.com"><p class="text-white"><i class="fa fa-envelope"></i>aditya@ramarutfibc.com</p></a>
+                                
                                 <div class="footer-social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <!-- <a href=""><i class="fab fa-twitter"></i></a>
                                     <a href=""><i class="fab fa-facebook-f"></i></a>
                                     <a href=""><i class="fab fa-youtube"></i></a>
                                     <a href=""><i class="fab fa-instagram"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a> -->
                                 </div>
                             </div>
                         </div>
@@ -400,7 +408,7 @@
                                 <a href="about.html">About Us</a>
                                 <a href="infra_policy.html">Infrastructure and Policy</a>
                                 <a href="contact.html">Contact Us</a>
-                                <a href="#">Our Products</a>
+                                <a href="fibc.html">Our Products</a>
                                 
                             </div>
                         </div>
@@ -437,6 +445,27 @@
 
             <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         </div>
+
+        <!--Learn More Script-->
+        <script>
+            function myFunction() {
+                var dots = document.getElementById("dots");
+                var moreText = document.getElementById("more");
+                var btnText = document.getElementById("myBtn");
+
+                if (dots.style.display === "none") {
+                    dots.style.display = "inline";
+                    btnText.innerHTML = "Read more"; 
+                    moreText.style.display = "none";
+                } else {
+                    dots.style.display = "none";
+                    btnText.innerHTML = "Read less"; 
+                    moreText.style.display = "inline";
+                    }
+                }
+            
+
+        </script>
 
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
